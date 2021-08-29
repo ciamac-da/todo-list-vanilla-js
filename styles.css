@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    background-color: #1c400f;
+}
+
+.container {
+    max-width: 500px;
+}
+
+input[type="text"]:focus {
+    background-color: #1c400f;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.delete {
+    cursor: pointer;
+}
