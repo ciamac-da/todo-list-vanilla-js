@@ -18,7 +18,7 @@ const generateTemplate = todo => {
 addForm.addEventListener("submit", e => {
     e.preventDefault()
 
-    const todo = addForm.add.value.trim().toLowerCase()
+    const todo = addForm.add.value.trim()
 
     if(todo.length) {
         generateTemplate(todo)
@@ -37,11 +37,11 @@ list.addEventListener("click", e => {
 const filterTodos = term => {
    
     Array.from(list.children)
-    .filter(todo => !todo.textContent.includes(term))
+    .filter(todo => !todo.textContent.toLowerCase().includes(term))
     .forEach(todo => todo.classList.add("filtered"))
    
     Array.from(list.children)
-    .filter(todo => todo.textContent.includes(term))
+    .filter(todo => todo.textContent.toLowerCase().includes(term))
     .forEach(todo => todo.classList.remove("filtered"))
 }
 

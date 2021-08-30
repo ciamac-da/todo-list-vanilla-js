@@ -4,15 +4,16 @@
 
 body {
     font-family: 'ZCOOL KuaiLe', cursive;
-    background-color: #1c400f;
+    background-color: #2f5694;
 }
 
 .container {
     max-width: 500px;
+    background-color: #3381d4;
 }
 
 input[type="text"]:focus {
-    background-color: #1c400f;
+    background-color: #2f5694;
     color: #fff;
     outline: none;
     border: none;
